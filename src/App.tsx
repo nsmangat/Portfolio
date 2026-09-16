@@ -1,5 +1,15 @@
+import { About } from "./components/About";
+import { Header } from "./components/Header";
+
 function App() {
-  return <p className="text-white">test</p>;
+  return (
+    <>
+      <Header />
+      <main>
+        <About />
+      </main>
+    </>
+  );
 }
 
 export default App;
