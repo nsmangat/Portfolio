@@ -6,14 +6,14 @@ const navLinks = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
-      <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
-        <nav className="flex gap-6 text-sm text-slate-300">
+    <header className="sticky top-0 z-50 border-b border-line bg-bg">
+      <div className="mx-auto flex max-w-2xl items-center justify-between px-6 py-4 text-sm">
+        <nav className="flex gap-6 text-muted">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="transition-colors hover:text-white"
+              className="transition-colors hover:text-signal"
             >
               {link.label}
             </a>
