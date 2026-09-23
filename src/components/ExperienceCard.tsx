@@ -1,8 +1,10 @@
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import type { Experience } from "../data/types";
 
 export function ExperienceCard({
   title,
   company,
+  companyUrl,
   location,
   startDate,
   endDate,
@@ -22,7 +24,24 @@ export function ExperienceCard({
       <div className="flex flex-1 flex-col gap-2">
         <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-baseline">
           <h3 className="text-lg font-semibold text-ink">
-            {title} · {company}
+            {title}
+            {company && (
+              <>
+                {" "}
+                · <span className="italic">{company}</span>
+                {companyUrl && (
+                  <a
+                    href={companyUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`${company} website`}
+                    className="ml-3 inline-block align-middle text-muted transition-colors hover:text-signal"
+                  >
+                    <FaArrowUpRightFromSquare className="h-3 w-3" />
+                  </a>
+                )}
+              </>
+            )}
           </h3>
           <span className="text-sm text-muted">
             {startDate} – {endDate}
