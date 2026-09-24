@@ -6,7 +6,7 @@ export const experience: Experience[] = [
     title: "Freelance Software Developer",
     company: "",
     location: "",
-    startDate: "2025",
+    startDate: "Oct 2025",
     endDate: "Present",
     description: [
       "Built a browser extension and admin dashboard that captures web page screenshots, its underlying HTML, console errors, and API requests to streamline IT bug reporting for a college professor  (see 'Bug Snipper' below under projects)",
@@ -45,7 +45,7 @@ export const experience: Experience[] = [
   {
     id: "experience-two",
     title: "Application Programming Intern",
-    company: "Compunnel, Inc.",
+    company: "Compunnel Inc.",
     companyUrl: "https://www.compunnel.com",
     location: "London, Ontario",
     startDate: "Sep 2023",
